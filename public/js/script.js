@@ -70,3 +70,35 @@ const menu = document.getElementById("menu");
 
     window.addEventListener("scroll", updateMenuHighlight);
     window.addEventListener("load", updateMenuHighlight);
+
+
+    // Initialisation de la carte
+const map = L.map('map').setView([-18.8792, 47.5079], 13); // Exemple : Antananarivo
+
+// Ajout des tuiles OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Exemple de points de recyclage (tu peux en ajouter plus)
+const recyclePoints = [
+  {
+    name: "Point de tri Analakely",
+    coords: [-18.9101, 47.5256]
+  },
+  {
+    name: "Recyclage Tanjombato",
+    coords: [-18.925, 47.545]
+  },
+  {
+    name: "Collecte Ambatobe",
+    coords: [-18.88, 47.54]
+  }
+];
+
+// Ajout des marqueurs
+recyclePoints.forEach(point => {
+  L.marker(point.coords)
+    .addTo(map)
+    .bindPopup(`<strong>${point.name}</strong>`);
+});

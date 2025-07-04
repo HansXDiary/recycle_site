@@ -7,7 +7,12 @@
   <title>EcoCycle</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./public/css/style.css">
- 
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 
 <body>
@@ -32,10 +37,12 @@
         <h1 id="typed-text"></h1>
         <p>
           Chez <strong>EcoCycle</strong>, nous croyons que chaque geste compte pour préserver notre planète.<br />
-          C’est pourquoi nous nous engageons à offrir des solutions de recyclage efficaces, accessibles et durables pour tous.
+          C’est pourquoi nous nous engageons à offrir des solutions de recyclage efficaces, accessibles et durables pour
+          tous.
         </p>
         <p>
-          Notre mission est simple : <strong>réduire l’impact environnemental</strong> en transformant les déchets en ressources utiles.
+          Notre mission est simple : <strong>réduire l’impact environnemental</strong> en transformant les déchets en
+          ressources utiles.
         </p>
         <a href="#service" class="cta">Voir nos services</a>
       </div>
@@ -51,10 +58,12 @@
       <div class="homeText">
         <h1>À propos de nous</h1>
         <p>
-          Fondée avec la conviction que chaque action compte, <strong>EcoCycle</strong> est née de la volonté de transformer notre manière de gérer les déchets.
+          Fondée avec la conviction que chaque action compte, <strong>EcoCycle</strong> est née de la volonté de
+          transformer notre manière de gérer les déchets.
         </p>
         <p>
-          Notre équipe est composée de passionnés de l’environnement, de professionnels du recyclage et d’innovateurs engagés pour une planète plus propre.
+          Notre équipe est composée de passionnés de l’environnement, de professionnels du recyclage et d’innovateurs
+          engagés pour une planète plus propre.
         </p>
       </div>
     </section>
@@ -67,18 +76,51 @@
       <div class="row">
         <div class="column">
           <h2>Collecte des Déchets</h2>
-          <p>Notre entreprise propose un service complet de collecte des déchets recyclables, adapté aussi bien aux particuliers qu’aux professionnels. Nous mettons à disposition des bacs de tri sélectif et organisons des tournées régulières pour la récupération des matériaux comme le papier, le plastique, le verre, les canettes, et les cartons. Ce service vise à simplifier la gestion des déchets à la source tout en garantissant une traçabilité complète. En plus de nos tournées hebdomadaires, nous proposons également des collectes ponctuelles lors d’événements, de chantiers ou de grands nettoyages communautaires. L’objectif est de rendre le recyclage accessible, pratique et efficace pour tous.</p>
+          <p>Notre entreprise propose un service complet de collecte des déchets recyclables, adapté aussi bien aux
+            particuliers qu’aux professionnels. Nous mettons à disposition des bacs de tri sélectif et organisons des
+            tournées régulières pour la récupération des matériaux comme le papier, le plastique, le verre, les
+            canettes, et les cartons. Ce service vise à simplifier la gestion des déchets à la source tout en
+            garantissant une traçabilité complète. En plus de nos tournées hebdomadaires, nous proposons également des
+            collectes ponctuelles lors d’événements, de chantiers ou de grands nettoyages communautaires. L’objectif est
+            de rendre le recyclage accessible, pratique et efficace pour tous.</p>
         </div>
         <div class="column">
           <h2>Tri et Traitement</h2>
-          <p>Une fois les déchets récupérés, ils sont transportés dans nos centres de tri où ils sont soigneusement séparés selon leur composition : plastiques rigides, films plastiques, papiers, cartons, métaux, et verre. Ce processus est réalisé à la fois manuellement et à l’aide de machines automatisées de dernière génération, permettant une séparation fine et une élimination efficace des contaminants. Chaque matériau est ensuite dirigé vers la filière de traitement appropriée, assurant ainsi une valorisation maximale. Nous suivons des protocoles stricts en matière de sécurité, d’hygiène et de respect de l’environnement pour minimiser notre empreinte carbone à chaque étape du traitement.</p>
+          <p>Une fois les déchets récupérés, ils sont transportés dans nos centres de tri où ils sont soigneusement
+            séparés selon leur composition : plastiques rigides, films plastiques, papiers, cartons, métaux, et verre.
+            Ce processus est réalisé à la fois manuellement et à l’aide de machines automatisées de dernière génération,
+            permettant une séparation fine et une élimination efficace des contaminants. Chaque matériau est ensuite
+            dirigé vers la filière de traitement appropriée, assurant ainsi une valorisation maximale. Nous suivons des
+            protocoles stricts en matière de sécurité, d’hygiène et de respect de l’environnement pour minimiser notre
+            empreinte carbone à chaque étape du traitement.</p>
         </div>
         <div class="column">
           <h2>Transformation et Revalorisation</h2>
-          <p>Après le tri, les matériaux recyclables sont soumis à un processus de transformation afin de redevenir des matières premières prêtes à être réutilisées dans l’industrie. Par exemple, le plastique est fondu et remodelé en granulés, le papier est broyé puis transformé en pâte pour la fabrication de nouveaux produits, et le verre est fondu pour redevenir bouteilles ou objets de décoration. Nous travaillons en étroite collaboration avec des partenaires industriels et artisanaux pour favoriser la réutilisation locale. Ce processus de revalorisation réduit la consommation de ressources naturelles, diminue les émissions de gaz à effet de serre, et participe activement à la construction d’une économie circulaire plus durable et résiliente.</p>
+          <p>Après le tri, les matériaux recyclables sont soumis à un processus de transformation afin de redevenir des
+            matières premières prêtes à être réutilisées dans l’industrie. Par exemple, le plastique est fondu et
+            remodelé en granulés, le papier est broyé puis transformé en pâte pour la fabrication de nouveaux produits,
+            et le verre est fondu pour redevenir bouteilles ou objets de décoration. Nous travaillons en étroite
+            collaboration avec des partenaires industriels et artisanaux pour favoriser la réutilisation locale. Ce
+            processus de revalorisation réduit la consommation de ressources naturelles, diminue les émissions de gaz à
+            effet de serre, et participe activement à la construction d’une économie circulaire plus durable et
+            résiliente.</p>
         </div>
       </div>
     </section>
+
+    <section id="map-section" class="reveal" style="padding: 50px 20px;">
+      <div style="text-align: center; width: 100%; margin-bottom: 40px;">
+        <h1>Nos Points de Recyclage</h1>
+        <p>Voici les lieux où vous pouvez déposer vos déchets recyclables.</p>
+      </div>
+      <div id="map"
+        style="height: 500px; width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px;">
+      </div>
+      <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #555;">
+  🔵 Cliquez sur un marqueur pour voir les détails d’un point de recyclage.
+  </div>
+    </section>
+
 
     <section id="contact" class="reveal">
       <div class="homeText">
@@ -106,5 +148,6 @@
     </section>
   </div>
 </body>
- <script src="./public/js/script.js"></script>
+<script src="./public/js/script.js"></script>
+
 </html>
